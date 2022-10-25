@@ -1,0 +1,127 @@
+
+### CLIENTES ###
+###
+
+GET http://localhost:3000/api/clientes
+
+###
+
+POST http://localhost:3000/api/clientes
+Content-Type: application/json
+
+{
+  "nombre": "Pepe",
+  "apellidos": "Viyuela",
+  "direccion": "c olvido 10",
+  "telefono": 666666666,
+  "fecha_nacimiento": "1980-03-10",
+  "dni": "99999999x",
+  "email": "pepeviyuela@gmail.com"
+}
+
+###
+
+PUT  http://localhost:3000/api/clientes/3
+Content-Type: application/json
+
+{
+    "nombre": "pepe",
+    "apellidos": "rus",
+    "direccion": "adios",
+    "telefono": "999999999",
+    "fecha_nacimiento": "1980-03-10",
+    "dni": "12345678e",
+    "email": "domi@gmail.com"
+}
+
+###
+
+
+DELETE  http://localhost:3000/api/clientes/6
+
+
+### HOTELES ###
+###
+
+GET http://localhost:3000/api/hoteles
+
+
+###
+
+POST http://localhost:3000/api/hoteles
+Content-Type: application/json
+
+{
+   "nombre": "Pequeñajo",
+    "direccion": "perdida,2",
+    "ciudad": "Jaen",
+    "num_estrellas": 3,
+    "descripcion": "Regulero",
+    "tarifa": 50
+}
+
+###
+
+PUT  http://localhost:3000/api/hoteles/3
+Content-Type: application/json
+
+{
+   "nombre": "Pequeñajo",
+    "direccion": "perdida,2",
+    "ciudad": "Jaen",
+    "num_estrellas": 3,
+    "descripcion": "Regulero lagarto",
+    "tarifa": 50
+}
+
+###
+
+DELETE  http://localhost:3000/api/hoteles/3
+
+###
+### VIAJES ###
+###
+
+GET http://localhost:3000/api/viajes
+
+###
+
+
+POST http://localhost:3000/api/viajes
+Content-Type: application/json
+
+{
+    "fecha_salida": "2023-05-12 09:20:00",
+    "fecha_vuelta": "2023-07-15 08:10:00",
+    "id_vuelo_ida": "MA002",
+    "id_vuelo_vuelta": "TF003",
+    "hotel_id": 2
+}
+
+###
+
+PUT  http://localhost:3000/api/viajes/2
+Content-Type: application/json
+
+{
+    "fecha_salida": "2023-01-24 01:20:00",
+    "fecha_vuelta": "2023-02-12 03:30:00",
+    "id_vuelo_ida": "AGP004",
+    "id_vuelo_vuelta": "FL00009",
+    "hotel_id": 1
+}
+
+###
+
+DELETE  http://localhost:3000/api/viajes/4
+
+
+###
+
+
+POST http://localhost:3000/api/clientes/1/viajes/1
+Content-Type: application/json
+
+
+
+
